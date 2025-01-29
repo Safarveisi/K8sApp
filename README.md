@@ -11,7 +11,7 @@ Activate the `devbox` shell (run `devbox shell`), navigate to `/terraform` direc
 
 ```bash
 terraform plan -out="tfplan"
-terraform apply 
+terraform apply "tfplan"
 ```
 
 It will take some time to create the resources. 
