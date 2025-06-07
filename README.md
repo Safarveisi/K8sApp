@@ -78,7 +78,7 @@ kubectl get svc -n ingress-nginx
 :sunglasses: You can now make an API request to http://ionos.ingress-nginx.com/fast/python-api/ with the parameter `select-api?api_name=node`.
 FastAPI will handle the request and store the request parameter, `api_name=node`, along with its timestamp, in a PostgreSQL table (public.request). Additionally, you can access the `Streamlit` dashboard by navigating to http://ionos.ingress-nginx.com/streamlit/.
 
-## Continuous delivery (CI)
+## Continuous delivery (CD)
 
 We utilize GitHub Actions for continuous delivery, as specified in the `.github/workflows` directory. 
 Essentially, the workflow is triggered whenever a new Git tag is created. This Git tag is applied to all Docker images, so if the new tag is 1.0.0, all Docker images will carry the same tag. Additionally, a pull request is initiated to merge these changes into the master branch.
